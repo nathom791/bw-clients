@@ -16,6 +16,7 @@ import platformPlugins from "./libs/eslint/platform/index.mjs";
 export default tseslint.config(
   ...storybook.configs["flat/recommended"],
   {
+    ignores: ["test/**", "**/*.spec.ts", "**/*.test.ts", "wdio.conf.ts"],
     // Everything in this config object targets our TypeScript files (Components, Directives, Pipes etc)
     files: ["**/*.ts", "**/*.js"],
     extends: [

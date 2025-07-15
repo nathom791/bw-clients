@@ -54,3 +54,6 @@ apps/**/config/local.json
 
 # Nx
 .nx
+
+# Serenity Target directory
+target/
